@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean id="sham123" class="com.jspiders.pkg1.User" autowire="byType">
+<property name="userName" value="sham"></property>
+
+</bean>
+<bean id="homeAddress" class="com.jspiders.pkg1.Address">   //byName we can create many object  
+<property name="city" value="ananthapur"></property>
+<property name="pincode" value="515621"></property>
+</bean>
+<bean id="workAddress" class="com.jspiders.pkg1.Address">
+<property name="city" value="bangulore"></property>         //this is dont write when using the autowire=bytype
+<property name="pincode" value="514231"></property>          byType creating only one object
+</bean>
+</beans>
